@@ -1,0 +1,54 @@
+<head>
+  <title>SharePoints</title>
+  <link rel="stylesheet" href="Libraries/foundation.min.css">
+  <script type="text/javascript" src="Libraries/jscolor.min.js"></script>
+  <script type="text/javascript" src="Libraries/foundation.min.js"></script>
+</head>
+
+<body>
+<div class="row">
+  <fieldset class="large-4 columns">
+  </fieldset>
+  <fieldset class="large-8 columns">
+    <h1 class="subheader">Dot Share</h1>
+  </fieldset>
+</div>
+
+  {{> canvas}}
+
+</body>
+
+
+
+<Template name="canvas">
+  <div class="row">
+    <fieldset class="large-2 columns">
+    </fieldset>
+    <fieldset class="large-10 columns">
+      <canvas id="sheet" height="400" width="600" style="border:1px solid #000000;">
+      </canvas>
+    </fieldset>
+  </div>
+
+
+
+  <div class="row">
+    <fieldset class="large-4 columns">
+    </fieldset>
+
+    <fieldset class="large-8 columns">
+      <button id="color"
+        class="jscolor {valueElement:null,value:'66ccff',width:243, height:150, position:'right',
+        borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666'}"></button>
+
+      <button id="refresh" class="success button" type="button" > Refresh </button>
+
+      <button id="reset" class="alert button" type="button" > Reset </button>
+      <input id="erase" type="checkbox"><label for="erase">Erase</label>
+    </fieldset>
+
+
+
+  </div>
+
+</Template>
